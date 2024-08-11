@@ -29,10 +29,10 @@ const store = makeInMemoryStore({
     })
 })
 
-let phoneNumber = "237696900612"
+let phoneNumber = "+923008121328"
 let owner = JSON.parse(fs.readFileSync('./database/owner.json'))
 
-const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
+const pairingCode = !!+923008121328 || process.argv.includes("--pairing-code")
 const useMobile = process.argv.includes("--mobile")
 
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
